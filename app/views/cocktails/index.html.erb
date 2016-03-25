@@ -1,0 +1,18 @@
+<div class="container">
+ <div class="row">
+   <div class="col-sm-8 col-sm-offset-2">
+
+     <% @cocktailss.each do |cocktail|%>
+     <article>
+       <%= link_to cocktail_path(cocktail) do %>
+       <h3><%= cocktail.name %></h3>
+       <% end %>
+       <p><%= ingredient.name %></p>
+       <p><%= dose.description %></p>
+     </article>
+     <% end %>
+
+   </div>
+ </div>
+</div>
+

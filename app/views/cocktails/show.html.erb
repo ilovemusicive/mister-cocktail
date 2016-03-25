@@ -1,0 +1,18 @@
+<h1>Cocktails#show</h1>
+<p>Find me in app/views/cocktails/show.html.erb</p>
+
+<div class="container">
+ <div class="row">
+   <div class="col-sm-8 col-sm-offset-2">
+
+     <article>
+       <h3><%= @cocktail.name %></h3>
+       <p><%= @ingredient.name %></p>
+       <p><%= @dose.description %></p>
+     </article>
+
+     <%= link_to 'Return to main page', cocktails_path %>
+
+   </div>
+ </div>
+</div>
